@@ -18,6 +18,10 @@
 		8957F4391E1937FA000C9046 /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957F4381E1937FA000C9046 /* Taco.swift */; };
 		8957F43B1E193EFF000C9046 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957F43A1E193EFF000C9046 /* DataService.swift */; };
 		8957F43D1E19421F000C9046 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957F43C1E19421F000C9046 /* csv.swift */; };
+		8957F4401E195EFB000C9046 /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957F43E1E195EFB000C9046 /* TacoCell.swift */; };
+		8957F4411E195EFB000C9046 /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8957F43F1E195EFB000C9046 /* TacoCell.xib */; };
+		8957F4431E1971D9000C9046 /* MutableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957F4421E1971D9000C9046 /* MutableCollection.swift */; };
+		8957F4451E1978EC000C9046 /* Shakeable Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957F4441E1978EB000C9046 /* Shakeable Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		8957F4381E1937FA000C9046 /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
 		8957F43A1E193EFF000C9046 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8957F43C1E19421F000C9046 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		8957F43E1E195EFB000C9046 /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
+		8957F43F1E195EFB000C9046 /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
+		8957F4421E1971D9000C9046 /* MutableCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableCollection.swift; sourceTree = "<group>"; };
+		8957F4441E1978EB000C9046 /* Shakeable Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shakeable Animation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				8957F4361E193598000C9046 /* HeaderView.swift */,
+				8957F43E1E195EFB000C9046 /* TacoCell.swift */,
+				8957F43F1E195EFB000C9046 /* TacoCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -119,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8957F4341E1932D9000C9046 /* DropShadow.swift */,
+				8957F4441E1978EB000C9046 /* Shakeable Animation.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 		8957F4331E192FBD000C9046 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8957F4421E1971D9000C9046 /* MutableCollection.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 				8957F42D1E192F6A000C9046 /* TacoPOPData.csv in Resources */,
 				8957F4221E19271B000C9046 /* Assets.xcassets in Resources */,
 				8957F4201E19271B000C9046 /* Main.storyboard in Resources */,
+				8957F4411E195EFB000C9046 /* TacoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,12 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8957F4401E195EFB000C9046 /* TacoCell.swift in Sources */,
 				8957F41D1E19271B000C9046 /* MainVc.swift in Sources */,
 				8957F43D1E19421F000C9046 /* csv.swift in Sources */,
 				8957F4351E1932D9000C9046 /* DropShadow.swift in Sources */,
 				8957F41B1E19271B000C9046 /* AppDelegate.swift in Sources */,
+				8957F4431E1971D9000C9046 /* MutableCollection.swift in Sources */,
 				8957F43B1E193EFF000C9046 /* DataService.swift in Sources */,
 				8957F4391E1937FA000C9046 /* Taco.swift in Sources */,
+				8957F4451E1978EC000C9046 /* Shakeable Animation.swift in Sources */,
 				8957F4371E193598000C9046 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +385,7 @@
 				8957F42B1E19271B000C9046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

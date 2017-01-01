@@ -84,11 +84,11 @@ struct Taco {
         }
         
         switch ProteinId {
-        case 1:
-            self.proteinId = TacoProtein.Chicken
         case 2:
-            self.proteinId = TacoProtein.Brisket
+            self.proteinId = TacoProtein.Chicken
         case 3:
+            self.proteinId = TacoProtein.Brisket
+        case 4:
             self.proteinId = TacoProtein.Fish
         default:
             self.proteinId = TacoProtein.Beef

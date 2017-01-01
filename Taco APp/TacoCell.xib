@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="Taco_APp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" translatesAutoresizingMaskIntoConstraints="NO" id="Wit-fZ-lm7">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="69" id="V8a-HZ-3pz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beef" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Tac-j4-tGM">
+                        <rect key="frame" x="0.0" y="74" width="95" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wit-fZ-lm7" secondAttribute="trailing" id="Zfp-Kc-1Ho"/>
+                <constraint firstItem="Wit-fZ-lm7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lnA-T5-bOs"/>
+                <constraint firstItem="Tac-j4-tGM" firstAttribute="top" secondItem="Wit-fZ-lm7" secondAttribute="bottom" constant="5" id="mMe-Hx-Sf4"/>
+                <constraint firstItem="Tac-j4-tGM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="n10-9y-0n9"/>
+                <constraint firstAttribute="bottom" secondItem="Tac-j4-tGM" secondAttribute="bottom" id="nOF-ce-6M3"/>
+                <constraint firstAttribute="trailing" secondItem="Tac-j4-tGM" secondAttribute="trailing" id="voX-cM-DOi"/>
+                <constraint firstItem="Wit-fZ-lm7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="w4B-Z7-Ic0"/>
+            </constraints>
+            <size key="customSize" width="95" height="95"/>
+            <connections>
+                <outlet property="tacoImage" destination="Wit-fZ-lm7" id="yBd-WF-Ued"/>
+                <outlet property="tacoLabel" destination="Tac-j4-tGM" id="Qah-PI-oZG"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="76.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Beef" width="960" height="640"/>
+    </resources>
+</document>
