@@ -29,6 +29,7 @@ class MainVC: UIViewController, finishloading {
         let nib = UINib(nibName: "TacoCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
         
+        
     }
 
     func dataloaded() {
